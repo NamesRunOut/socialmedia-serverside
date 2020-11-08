@@ -27,5 +27,6 @@
     "graphql": "^15.4.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.13"
-  }
+  },
+  "proxy": "https://socialmedia-serverside.herokuapp.com/"
 }
