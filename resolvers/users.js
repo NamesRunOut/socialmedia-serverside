@@ -2,7 +2,6 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const {UserInputError} = require('apollo-server')
 
-const {ENCRYPTION_KEY} = require('../dbconfig.js')
 const {validateRegisterInput, validateLoginInput} = require('../utils/validator')
 const isauth = require('../utils/isauth')
 const User = require('../Models/User')
@@ -12,7 +11,7 @@ function generateToken(user){
         id: user.id,
         email: user.email,
         username: user.username
-    }, ENCRYPTION_KEY || process.env.ENCRYPTION_KEY,
+    }, process.env.ENCRYPTION_KEY,
         { expiresIn: '1h'}
     );
 }

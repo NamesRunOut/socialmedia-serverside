@@ -9,8 +9,7 @@ const resolvers = require('./resolvers/resolvers')
 
 const pubsub = new PubSub()
 
-const { MONGODB } = require('./dbconfig.js')
-mongoose.connect(MONGODB || process.env.MONGODB, {useNewUrlParser: true})
+mongoose.connect(process.env.MONGODB, {useNewUrlParser: true})
   .then(() => {
     console.log("MongoDB connection established")
     return server.listen({port})
