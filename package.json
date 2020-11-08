@@ -1,0 +1,31 @@
+{
+  "name": "socialmedia-serverside",
+  "version": "1.0.0",
+  "description": "Server side for a prototype social media website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamesRunOut/socialmedia-serverside.git"
+  },
+  "keywords": [
+    "server",
+    "graphql"
+  ],
+  "author": "NamesRunOut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamesRunOut/socialmedia-serverside/issues"
+  },
+  "homepage": "https://github.com/NamesRunOut/socialmedia-serverside#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "bcryptjs": "^2.4.3",
+    "graphql": "^15.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13"
+  }
+}
