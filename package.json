@@ -28,5 +28,5 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.13"
   },
-  "proxy": "https://socialmedia-serverside.herokuapp.com/"
+  "proxy": "http://socialmedia-serverside.herokuapp.com/"
 }
