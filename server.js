@@ -22,8 +22,10 @@ mongoose.connect(process.env.MONGODB, {useNewUrlParser: true})
     })
 
 const server = new ApolloServer({
+  cors: false,
   typeDefs,
   resolvers,
-  cors: true,
   context: ({req}) => ({req, pubsub})
 });
+
+server.applyMiddleware({ app, cors: false });
