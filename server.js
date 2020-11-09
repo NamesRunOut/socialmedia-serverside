@@ -12,7 +12,7 @@ const pubsub = new PubSub()
 mongoose.connect(process.env.MONGODB, {useNewUrlParser: true})
   .then(() => {
     console.log("MongoDB connection established")
-    return server.listen({port})
+    return server.listen({port: port})
   })
   .then((response) => {
     console.log(`Server running at port ${response.url}`)
